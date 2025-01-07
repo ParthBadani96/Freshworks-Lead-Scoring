@@ -1,0 +1,85 @@
+lead_id,company_name,email,company_domain,linkedin_company_url,company_phone,employee_count,industry,job_title,created_date
+1,TechCorp Solutions,john.smith@techcorp.com,techcorp.com,linkedin.com/company/techcorp,+1-555-0101,1200,Technology,CTO,2023-12-01
+2,RetailGiant Corp,sarah.jones@retailgiant.com,retailgiant.com,linkedin.com/company/retailgiant,+1-555-0102,800,Retail,Director of Operations,2023-12-02
+3,CloudTech Systems,mike.wilson@cloudtech.com,cloudtech.com,linkedin.com/company/cloudtech,+1-555-0103,450,SaaS,VP Engineering,2023-12-03
+4,HealthPlus Medical,dr.brown@healthplus.com,healthplus.com,linkedin.com/company/healthplus,+1-555-0104,300,Healthcare,CEO,2023-12-04
+5,EduLearn Academy,peter@gmail.com,,,,50,Education,Manager,2023-12-05
+6,FinServe Solutions,janet.doe@finserve.com,finserve.com,linkedin.com/company/finserve,+1-555-0105,600,Financial Services,CFO,2023-12-06
+7,Manufacturing Pro,robert@manufacturingpro.com,manufacturingpro.com,linkedin.com/company/manufacturingpro,+1-555-0106,900,Manufacturing,Operations Director,2023-12-07
+8,Digital Dynamics,emma.tech@digitaldyn.com,digitaldyn.com,linkedin.com/company/digitaldyn,+1-555-0107,250,Technology,Product Manager,2023-12-08
+9,Smart Solutions,david@yahoo.com,,,,15,Professional Services,Consultant,2023-12-09
+10,Global Logistics,carlos@globallog.com,globallog.com,linkedin.com/company/globallog,+1-555-0108,750,Logistics,Supply Chain Head,2023-12-10
+11,AI Innovations,lisa.ai@aiinov.com,aiinov.com,linkedin.com/company/aiinov,+1-555-0109,180,Technology,AI Director,2023-12-11
+12,Retail Express,mark@retailexpress.com,retailexpress.com,linkedin.com/company/retailexpress,+1-555-0110,420,Retail,Sales Director,2023-12-12
+13,Cloud Services Inc,anna.cloud@cloudserv.com,cloudserv.com,linkedin.com/company/cloudserv,+1-555-0111,650,SaaS,Cloud Architect,2023-12-13
+14,MediTech Solutions,dr.white@meditech.com,meditech.com,linkedin.com/company/meditech,+1-555-0112,280,Healthcare,Medical Director,2023-12-14
+15,EduTech Global,james@hotmail.com,,,,25,Education,Coordinator,2023-12-15
+16,Finance Plus,michael.fin@finplus.com,finplus.com,linkedin.com/company/finplus,+1-555-0113,550,Financial Services,Investment Manager,2023-12-16
+17,Industrial Systems,george@industrial.com,industrial.com,linkedin.com/company/industrial,+1-555-0114,850,Manufacturing,Plant Manager,2023-12-17
+18,Tech Innovators,sarah.tech@techinno.com,techinno.com,linkedin.com/company/techinno,+1-555-0115,200,Technology,Innovation Lead,2023-12-18
+19,Consulting Group,paul@gmail.com,,,,10,Professional Services,Senior Consultant,2023-12-19
+20,Logistics Pro,maria@logipro.com,logipro.com,linkedin.com/company/logipro,+1-555-0116,700,Logistics,Operations Manager,2023-12-20
+21,DataTech Corp,alex.data@datatech.com,datatech.com,linkedin.com/company/datatech,+1-555-0117,950,Technology,Data Science Director,2023-12-21
+22,Retail Solutions,jennifer@retailsol.com,retailsol.com,linkedin.com/company/retailsol,+1-555-0118,380,Retail,Marketing Director,2023-12-22
+23,SaaS Platform,kevin.saas@saasplat.com,saasplat.com,linkedin.com/company/saasplat,+1-555-0119,520,SaaS,Platform Engineer,2023-12-23
+24,Healthcare Systems,dr.green@healthsys.com,healthsys.com,linkedin.com/company/healthsys,+1-555-0120,320,Healthcare,Head of Research,2023-12-24
+25,Education Plus,robert@yahoo.com,,,,35,Education,Program Director,2023-12-25
+26,Software Solutions,tom.dev@softsol.com,softsol.com,linkedin.com/company/softsol,+1-555-0121,1500,Technology,Software Architect,2023-12-26
+27,E-commerce Plus,rachel@ecomplus.com,ecomplus.com,linkedin.com/company/ecomplus,+1-555-0122,670,E-commerce,Digital Director,2023-12-27
+28,Data Analytics Co,peter.data@datalytics.com,datalytics.com,linkedin.com/company/datalytics,+1-555-0123,430,Technology,Analytics Head,2023-12-28
+29,Health Services,susan@gmail.com,,,,45,Healthcare,Nurse Manager,2023-12-29
+30,EduSmart Systems,chris.edu@edusmart.com,edusmart.com,linkedin.com/company/edusmart,+1-555-0124,290,Education,Academic Director,2023-12-30
+31,FinTech Solutions,alan.fin@fintech.com,fintech.com,linkedin.com/company/fintech,+1-555-0125,890,Financial Services,Product Director,2023-12-31
+32,Manufacturing Elite,brian.mfg@mfgelite.com,mfgelite.com,linkedin.com/company/mfgelite,+1-555-0126,1200,Manufacturing,Production Head,2024-01-01
+33,Tech Ventures,emma@yahoo.com,,,,20,Technology,Project Manager,2024-01-01
+34,Logistics Solutions,diego@logisol.com,logisol.com,linkedin.com/company/logisol,+1-555-0127,580,Logistics,Logistics Manager,2024-01-01
+35,AI Solutions Corp,maya.ai@aisol.com,aisol.com,linkedin.com/company/aisol,+1-555-0128,340,Technology,ML Engineer,2024-01-01
+36,Retail Dynamics,jack@retaildyn.com,retaildyn.com,linkedin.com/company/retaildyn,+1-555-0129,720,Retail,Regional Manager,2024-01-01
+37,Cloud Platforms,nina.cloud@cloudplat.com,cloudplat.com,linkedin.com/company/cloudplat,+1-555-0130,480,SaaS,Solutions Architect,2024-01-01
+38,MedCare Systems,dr.james@medcare.com,medcare.com,linkedin.com/company/medcare,+1-555-0131,150,Healthcare,Clinical Director,2024-01-02
+39,Learning Tech,karen@hotmail.com,,,,30,Education,Training Manager,2024-01-02
+40,Finance Direct,william.fin@findirect.com,findirect.com,linkedin.com/company/findirect,+1-555-0132,920,Financial Services,Finance Director,2024-01-02
+41,Industrial Pro,henry@indpro.com,indpro.com,linkedin.com/company/indpro,+1-555-0133,1100,Manufacturing,Technical Director,2024-01-02
+42,Tech Solutions,olivia.tech@techsol.com,techsol.com,linkedin.com/company/techsol,+1-555-0134,780,Technology,Solutions Manager,2024-01-02
+43,Consulting Plus,mark@gmail.com,,,,25,Professional Services,Lead Consultant,2024-01-02
+44,Logistics Direct,ana@logdir.com,logdir.com,linkedin.com/company/logdir,+1-555-0135,630,Logistics,Operations Director,2024-01-02
+45,Data Systems,ryan.data@datasys.com,datasys.com,linkedin.com/company/datasys,+1-555-0136,890,Technology,Data Manager,2024-01-03
+46,Retail Tech,sophia@retailtech.com,retailtech.com,linkedin.com/company/retailtech,+1-555-0137,540,Retail,Tech Lead,2024-01-03
+47,SaaS Solutions,lucas.saas@saassol.com,saassol.com,linkedin.com/company/saassol,+1-555-0138,670,SaaS,Product Owner,2024-01-03
+48,Healthcare Tech,dr.michael@healthtech.com,healthtech.com,linkedin.com/company/healthtech,+1-555-0139,420,Healthcare,Innovation Director,2024-01-03
+49,Edu Systems,daniel@yahoo.com,,,,40,Education,Department Head,2024-01-03
+50,Fintech Pro,jessica.fin@finpro.com,finpro.com,linkedin.com/company/finpro,+1-555-0140,1300,Financial Services,Strategy Director,2024-01-03
+51,Manufacturing Tech,adam.mfg@mfgtech.com,mfgtech.com,linkedin.com/company/mfgtech,+1-555-0141,950,Manufacturing,Innovation Manager,2024-01-03
+52,Digital Solutions,emily.digital@digsol.com,digsol.com,linkedin.com/company/digsol,+1-555-0142,280,Technology,Digital Manager,2024-01-04
+53,Smart Consulting,chris@gmail.com,,,,15,Professional Services,Business Analyst,2024-01-04
+54,Logistics Tech,marco@logtech.com,logtech.com,linkedin.com/company/logtech,+1-555-0143,820,Logistics,Tech Director,2024-01-04
+55,AI Platform,sophia.ai@aiplat.com,aiplat.com,linkedin.com/company/aiplat,+1-555-0144,390,Technology,AI Manager,2024-01-04
+56,Retail Pro,david@retailpro.com,retailpro.com,linkedin.com/company/retailpro,+1-555-0145,680,Retail,Operations Head,2024-01-04
+57,Cloud Tech,alex.cloud@cloudtech.com,cloudtech.com,linkedin.com/company/cloudtech,+1-555-0146,570,SaaS,Technical Lead,2024-01-04
+58,Med Solutions,dr.sarah@medsol.com,medsol.com,linkedin.com/company/medsol,+1-555-0147,240,Healthcare,Research Head,2024-01-04
+59,Education Tech,robert@hotmail.com,,,,35,Education,Tech Coordinator,2024-01-05
+60,Finance Systems,michael.sys@finsys.com,finsys.com,linkedin.com/company/finsys,+1-555-0148,1100,Financial Services,Systems Director,2024-01-05
+61,Industrial Tech,thomas@indtech.com,indtech.com,linkedin.com/company/indtech,+1-555-0149,730,Manufacturing,Tech Manager,2024-01-05
+62,Tech Platforms,lisa.tech@techplat.com,techplat.com,linkedin.com/company/techplat,+1-555-0150,460,Technology,Platform Manager,2024-01-05
+63,Consulting Tech,paul@gmail.com,,,,20,Professional Services,Tech Consultant,2024-01-05
+64,Logistics Plus,carlos@logplus.com,logplus.com,linkedin.com/company/logplus,+1-555-0151,890,Logistics,Strategy Manager,2024-01-05
+65,Data Platform,emma.data@dataplat.com,dataplat.com,linkedin.com/company/dataplat,+1-555-0152,520,Technology,Platform Director,2024-01-05
+66,Retail Systems,jennifer@retailsys.com,retailsys.com,linkedin.com/company/retailsys,+1-555-0153,640,Retail,Systems Manager,2024-01-05
+67,SaaS Tech,kevin.tech@saastech.com,saastech.com,linkedin.com/company/saastech,+1-555-0154,410,SaaS,Tech Director,2024-01-05
+68,Health Platform,dr.lisa@healthplat.com,healthplat.com,linkedin.com/company/healthplat,+1-555-0155,380,Healthcare,Platform Lead,2024-01-05
+69,Edu Platform,james@yahoo.com,,,,45,Education,Platform Manager,2024-01-05
+70,Fintech Systems,alan.sys@fintechsys.com,fintechsys.com,linkedin.com/company/fintechsys,+1-555-0156,980,Financial Services,Systems Head,2024-01-05
+71,Mfg Solutions,brian@mfgsol.com,mfgsol.com,linkedin.com/company/mfgsol,+1-555-0157,850,Manufacturing,Solutions Director,2024-01-05
+72,Tech Services,emma.service@techserv.com,techserv.com,linkedin.com/company/techserv,+1-555-0158,320,Technology,Service Manager,2024-01-06
+73,Smart Services,david@gmail.com,,,,25,Professional Services,Service Lead,2024-01-06
+74,Log Systems,maria@logsys.com,logsys.com,linkedin.com/company/logsys,+1-555-0159,760,Logistics,Systems Director,2024-01-06
+75,AI Services,maya.service@aiserv.com,aiserv.com,linkedin.com/company/aiserv,+1-555-0160,290,Technology,Service Director,2024-01-06
+76,Retail Tech Solutions,jack@retailtechsol.com,retailtechsol.com,linkedin.com/company/retailtechsol,+1-555-0161,580,Retail,Solutions Head,2024-01-06
+77,Cloud Systems,nina.sys@cloudsys.com,cloudsys.com,linkedin.com/company/cloudsys,+1-555-0162,470,SaaS,Systems Manager,2024-01-06
+78,Medical Tech,dr.james@medtech.com,medtech.com,linkedin.com/company/medtech,+1-555-0163,220,Healthcare,Tech Director,2024-01-06
+79,Education Systems,karen@hotmail.com,,,,30,Education,Systems Lead,2024-01-06
+80,Finance Tech,william.tech@fintech.com,fintech.com,linkedin.com/company/fintech,+1-555-0164,1400,Financial Services,Tech Head,2024-01-06
+81,Industrial Systems Pro,henry@indsyspro.com,indsyspro.com,linkedin.com/company/indsyspro,+1-555-0165,920,Manufacturing,Systems Director,2024-01-06
+82,Tech Innovations,olivia@techinnov.com,techinnov.com,linkedin.com/company/techinnov,+1-555-0166,680,Technology,Innovation Manager,2024-01-06
+83,Consulting Systems,mark@gmail.com,,,,35,Professional Services,Systems Consultant,2024-01-06
+84,Logistics Tech Pro,ana@logtechpro.com,logtechpro.com,linkedin.com/
