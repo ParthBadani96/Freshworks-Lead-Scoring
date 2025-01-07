@@ -1,0 +1,185 @@
+-- 1. First CTE: Website Engagement Scoring
+WITH website_engagement AS (
+    SELECT 
+        l.lead_id,
+        l.company_name,
+        -- Score meaningful page visits
+        SUM(CASE 
+            WHEN w.page_type = 'Pricing' AND w.time_spent_seconds > 120 THEN 5
+            WHEN w.page_type = 'Product Features' AND w.time_spent_seconds > 180 THEN 4
+            WHEN w.page_type = 'Case Studies' AND w.time_spent_seconds > 90 THEN 3
+            WHEN w.page_type = 'Blog' AND w.time_spent_seconds > 60 THEN 1
+            ELSE 0
+        END) as page_value_score,
+        -- Score visit patterns
+        CASE 
+            WHEN COUNT(DISTINCT w.session_id) >= 3 THEN 5
+            WHEN COUNT(DISTINCT w.session_id) = 2 THEN 3
+            WHEN COUNT(DISTINCT w.session_id) = 1 AND 
+                 MAX(w.time_spent_seconds) > 300 THEN 2
+            ELSE 0
+        END as visit_pattern_score,
+        -- Flag potential bot/junk traffic
+        CASE 
+            WHEN MIN(w.time_spent_seconds) < 5 AND 
+                 COUNT(DISTINCT w.page_type) > 10 THEN 'Potential Bot'
+            ELSE 'Normal Traffic'
+        END as traffic_quality
+    FROM LEADS l
+    JOIN WEBSITE_VISITS w ON l.lead_id = w.lead_id
+    WHERE w.visit_date >= '2024-01-01'
+    -- WHERE w.visit_date >= DATEADD(day, -30, GETDATE()) in normal circumstances use this code
+    GROUP BY l.lead_id, l.company_name
+),
+
+-- 2. Second CTE: Company Profile Scoring
+company_profile AS (
+    SELECT 
+        l.lead_id,
+        -- Company size score
+        CASE 
+            WHEN l.employee_count > 1000 THEN 10
+            WHEN l.employee_count BETWEEN 251 AND 1000 THEN 8
+            WHEN l.employee_count BETWEEN 51 AND 250 THEN 6
+            WHEN l.employee_count BETWEEN 11 AND 50 THEN 4
+            WHEN l.employee_count > 0 AND l.employee_count <= 10 THEN 2
+            WHEN l.employee_count IS NULL THEN 0
+            ELSE 0
+        END as company_size_score,
+        -- Industry relevance score
+        CASE 
+            WHEN l.industry IN ('Technology', 'SaaS', 'E-commerce') THEN 10
+            WHEN l.industry IN ('Retail', 'Financial Services', 'Healthcare') THEN 8
+            WHEN l.industry IN ('Manufacturing', 'Education', 'Professional Services') THEN 6
+            WHEN l.industry IS NOT NULL THEN 4
+            ELSE 0
+        END as industry_score,
+        -- Company validation score
+        (
+            CASE WHEN l.company_domain IS NOT NULL THEN 5 ELSE 0 END
+            +
+            CASE WHEN l.linkedin_company_url IS NOT NULL THEN 5 ELSE 0 END
+            +
+            CASE WHEN l.company_phone IS NOT NULL THEN 3 ELSE 0 END
+        ) as validation_score
+    FROM LEADS l
+),
+
+-- 3. Third CTE: Contact Quality Scoring
+contact_quality AS (
+    SELECT 
+        l.lead_id,
+        -- Email quality score
+        CASE 
+            WHEN l.email LIKE '%gmail.com' THEN 2
+            WHEN l.email LIKE '%yahoo.com' THEN 2
+            WHEN l.email LIKE '%hotmail.com' THEN 2
+            WHEN l.email LIKE '%' || l.company_domain THEN 10
+            ELSE 5
+        END as email_score,
+        -- Job level score
+        CASE 
+            WHEN LOWER(l.job_title) LIKE '%ceo%' OR 
+                 LOWER(l.job_title) LIKE '%cto%' OR 
+                 LOWER(l.job_title) LIKE '%cfo%' THEN 10
+            WHEN LOWER(l.job_title) LIKE '%director%' OR 
+                 LOWER(l.job_title) LIKE '%head%' OR 
+                 LOWER(l.job_title) LIKE '%vp%' THEN 8
+            WHEN LOWER(l.job_title) LIKE '%manager%' OR 
+                 LOWER(l.job_title) LIKE '%lead%' THEN 6
+            WHEN l.job_title IS NOT NULL THEN 4
+            ELSE 0
+        END as job_level_score
+    FROM LEADS l
+),
+
+-- 4. Fourth CTE: Engagement Actions Scoring
+engagement_actions AS (
+    SELECT 
+        l.lead_id,
+        -- Direct interest actions
+        SUM(CASE 
+            WHEN a.action_type = 'Demo Request' THEN 20
+            WHEN a.action_type = 'Trial Signup' THEN 15
+            WHEN a.action_type = 'Contact Sales' THEN 12
+            WHEN a.action_type = 'Whitepaper Download' THEN 8
+            WHEN a.action_type = 'Webinar Registration' THEN 6
+            WHEN a.action_type = 'Newsletter Signup' THEN 4
+            ELSE 0
+        END) as action_score,
+        -- Engagement frequency
+        COUNT(DISTINCT a.action_date) as engagement_days,
+        -- Recent engagement
+        MAX(a.action_date) as last_engagement_date
+    FROM LEADS l
+    LEFT JOIN LEADS_ACTIONS a ON l.lead_id = a.lead_id
+    WHERE a.action_date >= '2024-01-01'
+    --WHERE a.action_date >= DATEADD(day, -90, GETDATE())
+    GROUP BY l.lead_id
+),
+
+-- 5. Fifth CTE: Final Score Calculation
+final_scoring AS (
+    SELECT 
+        l.lead_id,
+        l.company_name,
+        l.created_date,
+        we.page_value_score,
+        we.visit_pattern_score,
+        cp.company_size_score,
+        cp.industry_score,
+        cp.validation_score,
+        cq.email_score,
+        cq.job_level_score,
+        COALESCE(ea.action_score, 0) as action_score,
+        we.traffic_quality,
+        -- Calculate total score
+        (we.page_value_score + we.visit_pattern_score + 
+         cp.company_size_score + cp.industry_score + cp.validation_score +
+         cq.email_score + cq.job_level_score + COALESCE(ea.action_score, 0)) as total_score,
+        -- Lead classification
+        CASE 
+            WHEN we.traffic_quality = 'Potential Bot' THEN 'Junk Lead'
+            WHEN (we.page_value_score + we.visit_pattern_score + 
+                  cp.company_size_score + cp.industry_score + cp.validation_score +
+                  cq.email_score + cq.job_level_score + COALESCE(ea.action_score, 0)) >= 80 THEN 'Hot Lead'
+            WHEN (we.page_value_score + we.visit_pattern_score + 
+                  cp.company_size_score + cp.industry_score + cp.validation_score +
+                  cq.email_score + cq.job_level_score + COALESCE(ea.action_score, 0)) >= 60 THEN 'Warm Lead'
+            WHEN (we.page_value_score + we.visit_pattern_score + 
+                  cp.company_size_score + cp.industry_score + cp.validation_score +
+                  cq.email_score + cq.job_level_score + COALESCE(ea.action_score, 0)) >= 40 THEN 'Nurture Lead'
+            ELSE 'Cold Lead'
+        END as lead_classification,
+        -- Primary reason for classification
+        CASE 
+            WHEN we.traffic_quality = 'Potential Bot' THEN 'Bot Traffic Pattern'
+            WHEN ea.action_score >= 20 THEN 'High Intent Actions'
+            WHEN cp.company_size_score + cp.industry_score >= 15 THEN 'Ideal Company Profile'
+            WHEN cq.job_level_score >= 8 THEN 'Senior Decision Maker'
+            WHEN we.page_value_score >= 10 THEN 'High Website Engagement'
+            ELSE 'Low Engagement'
+        END as classification_reason,
+        -- Days since last engagement
+        DATEDIFF(day, ea.last_engagement_date, GETDATE()) as days_since_last_engagement
+    FROM LEADS l
+    LEFT JOIN website_engagement we ON l.lead_id = we.lead_id
+    LEFT JOIN company_profile cp ON l.lead_id = cp.lead_id
+    LEFT JOIN contact_quality cq ON l.lead_id = cq.lead_id
+    LEFT JOIN engagement_actions ea ON l.lead_id = ea.lead_id
+)
+
+-- Final SELECT for PowerBI
+SELECT 
+    *,
+    -- Additional metrics for reporting
+    CASE 
+        WHEN days_since_last_engagement <= 7 THEN 'Active'
+        WHEN days_since_last_engagement <= 30 THEN 'Recent'
+        WHEN days_since_last_engagement <= 90 THEN 'Inactive'
+        ELSE 'Dormant'
+    END as engagement_status,
+    DATEADD(day, -days_since_last_engagement, GETDATE()) as last_engagement_date,
+    TO_CHAR(created_date, 'YYYY-MM') as creation_month
+FROM final_scoring
+ORDER BY total_score DESC;
