@@ -1,0 +1,85 @@
+LEAD_ID,COMPANY_NAME,CREATED_DATE,PAGE_VALUE_SCORE,VISIT_PATTERN_SCORE,COMPANY_SIZE_SCORE,INDUSTRY_SCORE,VALIDATION_SCORE,EMAIL_SCORE,JOB_LEVEL_SCORE,ACTION_SCORE,TRAFFIC_QUALITY,TOTAL_SCORE,LEAD_CLASSIFICATION,CLASSIFICATION_REASON,DAYS_SINCE_LAST_ENGAGEMENT,ENGAGEMENT_STATUS,LAST_ENGAGEMENT_DATE,CREATION_MONTH
+78,Medical Tech,2024-01-06,,,6,8,13,10,10,12,,,Cold Lead,Senior Decision Maker,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+48,Healthcare Tech,2024-01-03,,,8,8,13,10,10,27,,,Cold Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+63,Consulting Tech,2024-01-05,,,4,6,0,2,4,4,,,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2024-01
+76,Retail Tech Solutions,2024-01-06,,,8,8,13,10,8,15,,,Cold Lead,Ideal Company Profile,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+72,Tech Services,2024-01-06,,,8,10,13,10,6,15,,,Cold Lead,Ideal Company Profile,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+71,Mfg Solutions,2024-01-05,,,8,6,13,10,10,12,,,Cold Lead,Senior Decision Maker,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+84,Logistics Tech Pro,,,,0,0,10,10,0,20,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,
+53,Smart Consulting,2024-01-04,,,4,6,0,2,4,4,,,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2024-01
+81,Industrial Systems Pro,2024-01-06,,,8,6,13,10,10,15,,,Cold Lead,Senior Decision Maker,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+67,SaaS Tech,2024-01-05,,,8,10,13,10,10,20,,,Cold Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+55,AI Platform,2024-01-04,,,8,10,13,10,6,20,,,Cold Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+70,Fintech Systems,2024-01-05,,,8,8,13,10,8,20,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+77,Cloud Systems,2024-01-06,,,8,10,13,10,6,20,,,Cold Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+65,Data Platform,2024-01-05,,,8,10,13,10,10,15,,,Cold Lead,Ideal Company Profile,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+57,Cloud Tech,2024-01-04,,,8,10,13,10,6,15,,,Cold Lead,Ideal Company Profile,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+54,Logistics Tech,2024-01-04,,,8,4,13,10,10,15,,,Cold Lead,Senior Decision Maker,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+50,Fintech Pro,2024-01-03,,,10,8,13,10,10,35,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+62,Tech Platforms,2024-01-05,,,8,10,13,10,6,12,,,Cold Lead,Ideal Company Profile,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+60,Finance Systems,2024-01-05,,,10,8,13,10,10,20,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+75,AI Services,2024-01-06,,,8,10,13,10,10,12,,,Cold Lead,Ideal Company Profile,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+52,Digital Solutions,2024-01-04,,,8,10,13,10,6,20,,,Cold Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+58,Med Solutions,2024-01-04,,,6,8,13,10,8,20,,,Cold Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+59,Education Tech,2024-01-05,,,4,6,0,2,4,4,,,Cold Lead,Low Engagement,381,Dormant,2024-01-01 13:23:39.411 -0800,2024-01
+74,Log Systems,2024-01-06,,,8,4,13,10,10,20,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+69,Edu Platform,2024-01-05,,,4,6,0,2,6,4,,,Cold Lead,Low Engagement,381,Dormant,2024-01-01 13:23:39.411 -0800,2024-01
+80,Finance Tech,2024-01-06,,,10,8,13,10,8,20,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+56,Retail Pro,2024-01-04,,,8,8,13,10,8,12,,,Cold Lead,Ideal Company Profile,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+79,Education Systems,2024-01-06,,,4,6,0,2,6,4,,,Cold Lead,Low Engagement,381,Dormant,2024-01-01 13:23:39.411 -0800,2024-01
+68,Health Platform,2024-01-05,,,8,8,13,10,6,15,,,Cold Lead,Ideal Company Profile,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+73,Smart Services,2024-01-06,,,4,6,0,2,6,4,,,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2024-01
+49,Edu Systems,2024-01-03,,,4,6,0,2,8,4,,,Cold Lead,Senior Decision Maker,381,Dormant,2024-01-01 13:23:39.411 -0800,2024-01
+64,Logistics Plus,2024-01-05,,,8,4,13,10,6,20,,,Cold Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+66,Retail Systems,2024-01-05,,,8,8,13,10,6,12,,,Cold Lead,Ideal Company Profile,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+83,Consulting Systems,2024-01-06,,,4,6,0,2,4,4,,,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2024-01
+61,Industrial Tech,2024-01-05,,,8,6,13,10,6,15,,,Cold Lead,Low Engagement,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+82,Tech Innovations,2024-01-06,,,8,10,13,10,6,12,,,Cold Lead,Ideal Company Profile,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+51,Manufacturing Tech,2024-01-03,,,8,6,13,10,6,12,,,Cold Lead,Low Engagement,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+11,AI Innovations,2023-12-11,9,0,6,10,13,10,10,61,Normal Traffic,119,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+1,TechCorp Solutions,2023-12-01,17,3,10,10,13,10,10,40,Normal Traffic,113,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+21,DataTech Corp,2023-12-21,12,0,8,10,13,10,10,47,Normal Traffic,110,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+4,HealthPlus Medical,2023-12-04,12,0,8,8,13,10,10,47,Normal Traffic,108,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+26,Software Solutions,2023-12-26,12,0,10,10,13,10,4,47,Normal Traffic,106,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+31,FinTech Solutions,2023-12-31,12,0,8,8,13,10,10,35,Normal Traffic,96,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+28,Data Analytics Co,2023-12-28,9,0,8,10,13,10,8,35,Normal Traffic,93,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+6,FinServe Solutions,2023-12-06,12,3,8,8,13,10,10,28,Normal Traffic,92,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+38,MedCare Systems,2024-01-02,9,0,6,8,13,10,10,35,Normal Traffic,91,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+41,Industrial Pro,2024-01-02,12,2,10,6,13,10,10,27,Normal Traffic,90,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+44,Logistics Direct,2024-01-02,9,0,8,4,13,10,10,35,Normal Traffic,89,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+45,Data Systems,2024-01-03,7,0,8,10,13,10,6,32,Normal Traffic,86,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+3,CloudTech Systems,2023-12-03,10,3,8,10,13,10,8,24,Normal Traffic,86,Hot Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2023-12
+2,RetailGiant Corp,2023-12-02,12,3,8,8,13,10,10,21,Normal Traffic,85,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+40,Finance Direct,2024-01-02,4,0,8,8,13,10,10,32,Normal Traffic,85,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+7,Manufacturing Pro,2023-12-07,9,0,8,6,13,10,10,27,Normal Traffic,83,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+32,Manufacturing Elite,2024-01-01,4,0,10,6,13,10,8,32,Normal Traffic,83,Hot Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+16,Finance Plus,2023-12-16,9,0,8,8,13,10,6,28,Normal Traffic,82,Hot Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+18,Tech Innovators,2023-12-18,9,0,6,10,13,10,6,27,Normal Traffic,81,Hot Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+47,SaaS Solutions,2024-01-03,3,0,8,10,13,10,4,32,Normal Traffic,80,Hot Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+35,AI Solutions Corp,2024-01-01,7,0,8,10,13,10,4,27,Normal Traffic,79,Warm Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2024-01
+34,Logistics Solutions,2024-01-01,9,0,8,4,13,10,6,28,Normal Traffic,78,Warm Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+12,Retail Express,2023-12-12,3,0,8,8,13,10,10,24,Normal Traffic,76,Warm Lead,High Intent Actions,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+37,Cloud Platforms,2024-01-01,3,0,8,10,13,10,4,27,Normal Traffic,75,Warm Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+13,Cloud Services Inc,2023-12-13,9,0,8,10,13,10,4,20,Normal Traffic,74,Warm Lead,High Intent Actions,381,Dormant,2024-01-01 13:23:39.411 -0800,2023-12
+36,Retail Dynamics,2024-01-01,9,0,8,8,13,10,6,20,Normal Traffic,74,Warm Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+42,Tech Solutions,2024-01-02,4,0,8,10,13,10,6,20,Normal Traffic,71,Warm Lead,High Intent Actions,378,Dormant,2024-01-04 13:23:39.411 -0800,2024-01
+10,Global Logistics,2023-12-10,7,0,8,4,13,10,8,20,Normal Traffic,70,Warm Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+23,SaaS Platform,2023-12-23,9,0,8,10,13,10,4,15,Normal Traffic,69,Warm Lead,Ideal Company Profile,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+46,Retail Tech,2024-01-03,9,0,8,8,13,10,6,15,Normal Traffic,69,Warm Lead,Ideal Company Profile,376,Dormant,2024-01-06 13:23:39.411 -0800,2024-01
+20,Logistics Pro,2023-12-20,4,0,8,4,13,10,6,20,Normal Traffic,65,Warm Lead,High Intent Actions,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+24,Healthcare Systems,2023-12-24,4,0,8,8,13,10,8,12,Normal Traffic,63,Warm Lead,Ideal Company Profile,377,Dormant,2024-01-05 13:23:39.411 -0800,2023-12
+27,E-commerce Plus,2023-12-27,3,0,8,10,13,10,10,6,Normal Traffic,60,Warm Lead,Ideal Company Profile,378,Dormant,2024-01-04 13:23:39.411 -0800,2023-12
+30,EduSmart Systems,2023-12-30,4,0,8,6,13,10,10,8,Normal Traffic,59,Nurture Lead,Senior Decision Maker,376,Dormant,2024-01-06 13:23:39.411 -0800,2023-12
+22,Retail Solutions,2023-12-22,4,0,8,8,13,10,10,6,Normal Traffic,59,Nurture Lead,Ideal Company Profile,378,Dormant,2024-01-04 13:23:39.411 -0800,2023-12
+8,Digital Dynamics,2023-12-08,4,0,6,10,13,10,6,10,Normal Traffic,59,Nurture Lead,Ideal Company Profile,378,Dormant,2024-01-04 13:23:39.411 -0800,2023-12
+14,MediTech Solutions,2023-12-14,4,0,8,8,13,10,10,0,Normal Traffic,53,Nurture Lead,Ideal Company Profile,,Dormant,,2023-12
+17,Industrial Systems,2023-12-17,3,0,8,6,13,10,6,6,Normal Traffic,52,Nurture Lead,Low Engagement,378,Dormant,2024-01-04 13:23:39.411 -0800,2023-12
+33,Tech Ventures,2024-01-01,0,0,4,10,0,2,6,4,Normal Traffic,26,Cold Lead,Low Engagement,381,Dormant,2024-01-01 13:23:39.411 -0800,2024-01
+25,Education Plus,2023-12-25,0,0,4,6,0,2,10,4,Normal Traffic,26,Cold Lead,Senior Decision Maker,381,Dormant,2024-01-01 13:23:39.411 -0800,2023-12
+29,Health Services,2023-12-29,0,0,4,8,0,2,6,4,Normal Traffic,24,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2023-12
+5,EduLearn Academy,2023-12-05,0,0,4,6,0,2,6,4,Normal Traffic,22,Cold Lead,Low Engagement,381,Dormant,2024-01-01 13:23:39.411 -0800,2023-12
+43,Consulting Plus,2024-01-02,0,0,4,6,0,2,6,4,Normal Traffic,22,Cold Lead,Low Engagement,381,Dormant,2024-01-01 13:23:39.411 -0800,2024-01
+39,Learning Tech,2024-01-02,0,0,4,6,0,2,6,4,Normal Traffic,22,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2024-01
+9,Smart Solutions,2023-12-09,0,0,4,6,0,2,4,4,Normal Traffic,20,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2023-12
+19,Consulting Group,2023-12-19,0,0,2,6,0,2,4,4,Normal Traffic,18,Cold Lead,Low Engagement,380,Dormant,2024-01-02 13:23:39.411 -0800,2023-12
+15,EduTech Global,2023-12-15,0,0,4,6,0,2,4,0,Normal Traffic,16,Cold Lead,Low Engagement,,Dormant,,2023-12
